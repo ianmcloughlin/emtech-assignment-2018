@@ -1,0 +1,164 @@
+\documentclass[12pt, a4paper]{article}
+
+\newcommand{\modulename}{Emerging Technologies}
+\newcommand{\projectyear}{2018}
+\newcommand{\projectname}{Project \projectyear}
+\newcommand{\duedate}{last commit on or before November 30\textsuperscript{th}}
+
+\usepackage{xcolor}
+\usepackage{minted}
+\usepackage[utf8]{inputenc}
+\usepackage{tikz}
+\usepackage{caption}
+\usepackage{gensymb}
+\usepackage{lmodern}
+\usepackage{multirow}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{adjustbox}
+\usepackage{upquote}
+\usepackage{amsmath}
+\usepackage{url}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage{abstract}
+
+% Abstract
+\renewcommand{\abstractname}{}
+\renewcommand{\absnamepos}{empty}
+
+% Header and footer
+\fancypagestyle{plain}{
+  \renewcommand{\headrulewidth}{0pt}
+  \lhead{}
+  \rhead{}
+  \cfoot{Page~\thepage~of~\pageref{LastPage}}
+  \renewcommand{\footrulewidth}{0.1pt}
+}
+
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{\modulename}
+\rhead{\projectname}
+\cfoot{Page~\thepage~of~\pageref{LastPage}}
+\renewcommand{\headrulewidth}{0.1pt}
+\renewcommand{\footrulewidth}{0.1pt}
+
+% Links
+\usepackage[hidelinks]{hyperref}
+
+% Tables
+\newcolumntype{x}[1]{>{\centering\arraybackslash\hspace{0pt}}p{#1}}
+
+% Bibliography
+\renewcommand{\refname}{\selectfont\normalsize References} 
+
+\title{\projectname}
+\author{\modulename}
+\date{Due: \duedate}
+
+\begin{document}
+\maketitle
+
+\noindent
+This document contains the instructions for \projectname{} for \modulename{}.
+The project involves writing code, comments and documentation predominantly in the programming language Python~\cite{python} and using the Jupyter notebook~\cite{jupyter} software.
+You must use git~\cite{git} to track your work and you will submit your project by providing a URL to your git repository.
+It is suggested you use GitHub~\cite{github} for this purpose and that you consider making your repository publicly available so that prospective employers may view it.
+However, should you wish to, you may restrict general public access to your repository so long as you give permission to the lecturer to view it.
+Furthermore, any git repository URL to which you provide access to the lecturer will suffice -- you don't have to use GitHub.
+
+Please be advised that all students are bound by the Quality Assurance Framework~\cite{gmitqaf} at GMIT which includes the Code of Student Conduct and the Policy on Plagiarism.
+The onus is on the student to ensure they do not, even inadvertently, break the rules.
+A clean and comprehensive git history is the best way to demonstrate to the examiner that your submission is your own work.
+Note, however, that it is expected that you draw on work that is not your own to build your submission and you should systematically reference this work to enhance your submission.
+
+\subsection*{Submission content}
+Your submission will have five main components:
+
+\begin{itemize}
+  \item A jupyter notebook explaining the numpy random package.
+  \item A jupyter notebook explaining how simple linear regression works.
+  \item A jupyter notebook explaining how to read the MNIST dataset efficiently in Python.
+  \item A Python script that takes an image file containing a handwritten digit and identifies the digit.
+  \item A jupyter notebook explaining how the above Python script works, and its performance.
+\end{itemize}
+
+
+
+\subsection*{Minimum Viable Project}
+The minimum standard for this project is a git repository containing the foure notebooks and one Python script listed above, along with a README, LICENSE and gitignore.
+Your README should clearly document how to run the script and notebooks in your repository.
+A better project will be well organised and contain detailed explanations.
+The architecture of the code and notebooks will be well conceived.
+
+
+\subsection*{Submissions}
+git must be used to manage the development of the software and you must make your repository available to the lecturer by URL.
+Your git repository will form the main submission of the project.
+You must submit the URL of your git repository using the link on the course Moodle page before the deadline.
+You can do this at any time, as the last commit before the deadline will be used as your submission for this project.
+
+Any submission that does not have a full and incremental git history with informative commit messages over the course of the project timeline will be accorded a proportionate mark.
+It is expected that your repository will have at least tens of commits, with each commit relating to a reasonably small unit of work.
+In the last week of term, or at any other time, you may be asked by the lecturer to explain the contents of your git repository.
+While it is encouraged that students will engage in peer learning, any unreferenced documentation and software that is contained in your submission must have been written by you.
+You can show this by having a long incremental commit history and by being able to explain your code.
+
+\subsection*{Marking scheme}
+This project will be worth 50\% of your mark for this module.
+The following marking scheme will be used to mark the project out of 100\%.
+Students should note, however, that in certain circumstances the examiner's overall impression of the project may influence marks in each individual component.
+
+\begin{center}
+  \begin{tabular}{llp{8.4cm}}
+    \toprule
+    25\% & \textbf{Research} & Investigation of problem and possible solutions. \\
+    \midrule
+    25\% & \textbf{Development} & Clear architecture and well-written code. \\
+    \midrule
+    25\% & \textbf{Consistency} & Good planning and pragmatic attitude to work. \\
+    \midrule
+    25\% & \textbf{Documentation} & Detailed descriptions and explanations. \\
+    \bottomrule
+  \end{tabular}
+\end{center}
+
+\subsection*{Advice for students}
+\begin{itemize}
+    \item
+    Your git log history should be extensive.
+    A reasonable unit of work for a single commit is a small function, or a handful of comments, or a small change that fixes a bug.
+    If you are well organised you will find it easier to determine the size of a reasonable commit, and it will show in your git history.
+    \item
+    Using information, code and data from outside sources is sometimes acceptable -- so long as it is licensed to permit this, you clearly reference the source, and the overall project is substantially your own work.
+    Using a source that does not meet these three conditions could jeopardise your mark.
+    \item
+    You must be able to explain your project during it, and after it.
+    Bear this in mind when you are writing your README.
+    If you had trouble understanding something in the first place, you will likely have trouble explaining it a couple of weeks later.
+    Write a short explanation of it in your README, so that you can jog your memory later.
+    \item
+    Everyone is susceptible to procrastination and disorganisation.
+    You are expected to be aware of this and take reasonable measures to avoid them.
+    The best way to do this is to draw up an initial straight-forward project plan and keep it updated.
+    You can show the examiner that you have done this in several ways.
+    The easiest is to summarise the project plan in your README.
+    Another way is to use a to-do list like GitHub Issues.
+    \item
+    Students have problems with projects from time to time.
+    Some of these are unavoidable, such as external factors relating to family issues or illness.
+    In such cases allowances can sometimes be made.
+    Other problems are preventable, such as missing the submission deadline because you are having internet connectivity issues five minutes before it.
+    Students should be able to show that up until an issue arose they had completed a reasonable and proportionate amount of work, and took reasonable steps to avoid preventable issues.
+    \item
+    Go easy on yourself -- this is one project in one module.
+    It will not define you or your life.
+    A higher overall course mark should not be determined by a single project, but rather your performance in all your work in all your modules.
+    Here, you are just trying to demonstrate to yourself, to the examiners, and to prospective future employers, that you can take a reasonably straight-forward problem and solve it within a few weeks.
+\end{itemize}
+
+
+\bibliographystyle{plain}
+\bibliography{bibliography}
+\end{document}
