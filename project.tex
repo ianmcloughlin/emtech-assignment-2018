@@ -62,8 +62,9 @@
 
 \noindent
 This document contains the instructions for \projectname{} for \modulename{}.
-The project involves writing code, comments and documentation predominantly in the programming language Python~\cite{python} and using the Jupyter notebook~\cite{jupyter} software.
-You must use git~\cite{git} to track your work and you will submit your project by providing a URL to your git repository.
+The project involves writing documentation, code, and comments in the programming language Python~\cite{python} and using the Jupyter notebook~\cite{jupyter} software.
+
+You must use the version control software git~\cite{git} to track your work and you will submit your project by providing a URL to your git repository.
 It is suggested you use GitHub~\cite{github} for this purpose and that you consider making your repository publicly available so that prospective employers may view it.
 However, should you wish to, you may restrict general public access to your repository so long as you give permission to the lecturer to view it.
 Furthermore, any git repository URL to which you provide access to the lecturer will suffice -- you don't have to use GitHub.
@@ -71,30 +72,39 @@ Furthermore, any git repository URL to which you provide access to the lecturer 
 Please be advised that all students are bound by the Quality Assurance Framework~\cite{gmitqaf} at GMIT which includes the Code of Student Conduct and the Policy on Plagiarism.
 The onus is on the student to ensure they do not, even inadvertently, break the rules.
 A clean and comprehensive git history is the best way to demonstrate to the examiner that your submission is your own work.
-Note, however, that it is expected that you draw on work that is not your own to build your submission and you should systematically reference this work to enhance your submission.
+It is, however, expected that you draw on work that is not your own to build your submission and you should systematically reference this work to enhance your submission.
 
 \subsection*{Submission content}
-Your submission will have five main components:
+Your submission will have five main components.
+Each component is either a Jupyter notebook or a Python script.
 
 \begin{enumerate}
-  \item \textbf{numpy random notebook:} a jupyter notebook explaining the use of the numpy random package, including plots of the various distributions.
-  \item \textbf{Iris dataset notebook:} A jupyter notebook explaining the famour iris data set.
-  \item \textbf{MNIST dataset notebook:} a jupyter notebook explaining how to read the MNIST dataset efficiently in Python.
-  \item \textbf{Digit recognition script:} a Python script that takes an image file containing a handwritten digit and identifies the digit.
-  \item \textbf{Digit recognition notebook:} a jupyter notebook explaining how the above Python script works, and its performance.
+  \item \textbf{numpy random notebook:} a jupyter notebook explaining the concepts behind and the use of the numpy random package, including plots of the various distributions.
+  \item \textbf{Iris dataset notebook:} a jupyter notebook explaining the famous iris data set including the difficulty in writing an algorithm to separate the three classes of iris based on their parameters.
+  \item \textbf{MNIST dataset notebook:} a jupyter notebook explaining how to read the MNIST dataset efficiently into memory in Python.
+  \item \textbf{Digit recognition script:} a Python script that takes an image file containing a handwritten digit and identifies the digit using a supervised learning algorithm and the MNIST dataset.
+  \item \textbf{Digit recognition notebook:} a jupyter notebook explaining how the above Python script works, and discussing its performance.
 \end{enumerate}
 
+Each file should be easily identified by someone visiting your repository, and your README should clearly explain how to run them.
+I would suggest naming the five files \mintinline{python}{numpy-random.ipynb}, \mintinline{python}{iris-dataset.ipynb}, \mintinline{python}{mnist-dataset.ipynb}, \mintinline{python}{digitrec.py}, and \mintinline{python}{digit-recognition.ipynb} respectively.
 
 
 \subsection*{Minimum Viable Project}
-The minimum standard for this project is a git repository containing the foure notebooks and one Python script listed above, along with a README, LICENSE and gitignore.
+The minimum standard for this project is a git repository containing the four notebooks and one Python script listed above, along with a README, LICENSE and gitignore.
 Your README should clearly document how to run the script and notebooks in your repository.
+Your repository should not contain any unnecessary files, such as backup or compiled files.
+
 A better project will be well organised and contain detailed explanations.
-The architecture of the code and notebooks will be well conceived.
+The quality of the submission will be immediately evident in the ease by which the concepts, code and setup are understood.
+The architecture of each notebook and script will be well conceived.
+
+Please note that at this level there is no one right answer.
+Rather, it is up to you to take the assignment, make it your own by constucting your own narrative around it and then to justify that narrative through evidence.
 
 
-\subsection*{Submissions}
-git must be used to manage the development of the software and you must make your repository available to the lecturer by URL.
+\subsection*{Submission}
+The version control software git must be used to manage the development of the software and you must make your repository available to the lecturer by URL.
 Your git repository will form the main submission of the project.
 You must submit the URL of your git repository using the link on the course Moodle page before the deadline.
 You can do this at any time, as the last commit before the deadline will be used as your submission for this project.
@@ -107,25 +117,21 @@ You can show this by having a long incremental commit history and by being able 
 
 \subsection*{Marking scheme}
 This assignment is worth 100\% of your marks for this module.
-However, it is broken into three distinct parts: 40\% for the first three Jupyter notebooks (on numpy, iris, and MNIST), 40\% for the Python script and associated Jupyter notebook on recognising digits, and finally 20\% for presentation of these ideas.
-The presentation will consist of both the way your work is presented in your repository and also a final one-on-one end of semester meeting with the lecturer.
+It is broken into three distinct parts: 40\% for the first three Jupyter notebooks (on numpy, iris, and MNIST), 40\% for the Python script and associated Jupyter notebook on recognising digits, and finally 20\% for presentation of these ideas.
+However, the two 40\% sections will be marked using the same marking scheme and the mark for each will be the same unless there is justification for a difference.
 The following marking scheme will be used.
-Students should note, however, that in certain circumstances the examiner's overall impression of the project may influence marks in each individual component.
+Students should note also that in certain circumstances the examiner's overall impression of the project may influence marks in each individual component and the mark adjusted accordingly.
 
 \begin{center}
-  \begin{tabular}{lllp{6.4cm}}
+  \begin{tabular}{lcp{8.6cm}}
     \toprule
-    \multirow{4}{*}{\rotatebox{90}{Notebooks}} & \textbf{Research} & 10\% & Investigation of problem and possible solutions. \\
-    & \textbf{Development} & 10\% & Clear architecture and well-written code. \\
-    & \textbf{Consistency} & 10\% & Good planning and pragmatic attitude to work. \\
-    & \textbf{Documentation} & 10\% & Detailed descriptions and explanations. \\
+    \textbf{Category}      & \textbf{\%} & \textbf{Description} \\
     \midrule
-    \multirow{4}{*}{\rotatebox{90}{Digits}} & \textbf{Research} & 10\% & Investigation of problem and possible solutions. \\
-    & \textbf{Development} & 10\% & Clear architecture and well-written code. \\
-    & \textbf{Consistency} & 10\% & Good planning and pragmatic attitude to work. \\
-    & \textbf{Documentation} & 10\% & Detailed descriptions and explanations. \\
-    \midrule
-    \rotatebox{90}{Presentation} & \textbf{Clarity} & 20\% & Investigation of problem and possible solutions. \\
+    \textbf{Research}      & 20\%   & Investigation of each notebook and script as demonstrated by references, background information, and approach. \\
+    \textbf{Development}   & 20\%   & Clear, well-written, and efficient code with appropriate comments. \\
+    \textbf{Consistency}   & 20\%   & Good planning and pragmatic attitude to work as evidenced by commit history. \\
+    \textbf{Documentation} & 20\%   & Concise descriptions and explanations of theoretical and practical aspects of problems. \\
+    \textbf{Presentation}  & 20\%   & Natural and intuitive presentation of concepts and code in repository and through in-person discussion. \\
     \midrule
     \bottomrule
   \end{tabular}
