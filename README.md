@@ -1,7 +1,7 @@
-# Project 2018: Graph Theory
+# Project 2018: Emerging Technologies
 
-These are the instructions for the project for the module **Graph Theory** in 2018.
-The module is taught to third year undergraduate students at [GMIT](http://www.gmit.ie).
+These are the instructions for the project for the module **Emerging Technologies** in 2018.
+The module is taught to fourth year undergraduate students at [GMIT](http://www.gmit.ie).
 The lecturer is [Ian McLoughlin](https://ianmcloughlin.github.io).
 
 #### Compilation
